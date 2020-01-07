@@ -64,7 +64,7 @@ export default class BoardController {
     }
 
     const container = this._container.getElement();
-    render(container, this._loadMoreButtonComponent, RenderPosition.BEFOREEND)
+    render(container, this._loadMoreButtonComponent, RenderPosition.BEFOREEND);
 
     this._loadMoreButtonComponent.setClickHandler(() => {
       const prevTasksCount = this._showingTasksCount;
